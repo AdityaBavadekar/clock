@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --time-text-color: white;
+    --background-main-color: black;
+    --icon-color: white;
+    --icon-btn-color: black;
+}
+
+.light-theme {
+    --time-text-color: black;
+    --background-main-color: white;
+    --icon-color: black;
+    --icon-btn-color: white;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-main-color);
+    transform: color 0.3s ease, background-color 0.3s ease;
+}
+
+#time-text {
+    font-size: 13rem;
+}
+
+canvas {
+    display: block;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#time-text {
+    color: var(--time-text-color);
+    font-size: clamp(4rem, 10vw, 8rem);
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+#date-text {
+    color: var(--time-text-color);
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.blink-warn-text {animation: pulse-color 1s infinite;}
+@keyframes pulse-color {
+    0% { color: rgb(171, 101, 236); }
+    50% { color: rgb(216, 191, 239); }
+    100% { color: rgb(171, 101, 236); }
+}
+
+#btm-warn-text {
+    color: #ff9a9e;
+    font-family: monospace;
+    padding-left: 18px;
+    text-align: center;
+    margin-top: 10px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.geo-box {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+    overflow-y: auto;
+    max-height: 150px;
+}
+
+.geo-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+.geo-content {
+    font-size: 12px;
+    line-height: 1.4;
+    overflow-y: auto;
+    max-height: 100px;
+    padding-right: 5px;
+}
+
+/* Scrollbar styling for logs */
+.geo-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.geo-content::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+
+.geo-content::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+.icon {color: var(--icon-color);}
+.icon-btn {
+    color: var(--icon-btn-color);
+    border: 1px solid var(--icon-color);
+    opacity: 0.7;
+}
+
+#info-btn {
+    opacity: 0.2;
+    height: 20px;
+    width: 20px;
+}

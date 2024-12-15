@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container absolute top-0 start-0 m-x-5 mb-2 z-10 end-0 flex blink-warn-text opacity-75" id="btm-warn-text">
+        <p>Press <span class="font-bold">i</span> or click the info button for more info</p>
+    </div>
+    <div class="container absolute top-0 start-0 gap-4 flex m-5 z-10 w-fit flex-col">
+        <button class="p-3" id="info-btn">
+            <i class="ri-info-i p-1 icon"></i>
+        </button>
+    </div>
+    <div class="container relative min-h-screen flex items-center">
+        <div class="container">
+            <div class="hero-title hidden" id="hero-title"></div>
+            <div class="time text-center font-bold mb-3">
+                <p id="time-text">00:00:00</p>
+                <div id="date-text" class="text-xl opacity-50"></div>
+            </div>
+        </div>
+        <div class="geo-box hidden" id="log-box">
+            <p class="geo-title">Logs:</p>
+            <div class="geo-content" id="log-content"></div>
+        </div>
+        <div class="container absolute bottom-0 end-0 gap-4 flex m-5 w-fit flex-col">
+            <button class="p-3 rounded-full icon-btn hover:shadow hover:bg-black-200" id="theme-toggle-btn">
+                <i class="ri-moon-line p-1 hidden icon" id="moon-icon"></i>
+                <i class="ri-sun-line p-1 icon" id="sun-icon"></i>
+            </button>
+            <button class="p-3 rounded-full icon-btn hover:shadow hover:bg-green-200" id="fullscreen-btn">
+                <i class="ri-fullscreen-line p-1 icon" id="full-screen-icon"></i>
+                <i class="ri-fullscreen-exit-line p-1 hidden icon" id="normal-screen-icon"></i>
+            </button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
