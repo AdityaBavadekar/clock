@@ -68,15 +68,17 @@ function toggleTheme(){
 }
 
 function showKeyboardShortcutsInfo(){
+  const alertForMobile = isMobileDevice() ? "On Mobile: Double tap to toggle fullscreen, Single tap to toggle buttons visibility.\n\n" : "";
   alert(
+    alertForMobile +
     "Supported Keyboard Shortcuts:\n\n" +
-    "'f' - Toggle Full Screen\n" +
-    "'h' - Toggle Buttons Visibility\n" +
-    "'t' - Toggle Theme\n" +
-    "'l' - Log current date and time\n" +
-    "'L' - Toggle Logs visibility\n" +
-    "'Q' - Set a new title for the clock\n" +
-    "'i' - To show this message\n"
+    "f - Toggle Full Screen\n" +
+    "h - Toggle Buttons Visibility\n" +
+    "t - Toggle Theme\n" +
+    "l - Log current date and time\n" +
+    "L - Toggle Logs visibility\n" +
+    "Q - Set a new title for the clock\n" +
+    "i - To show this message\n"
   );
 }
 
