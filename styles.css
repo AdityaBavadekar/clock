@@ -5,6 +5,7 @@
     --background-main-color: black;
     --icon-color: white;
     --icon-btn-color: black;
+    --title-text-color: #ffcc00;
 }
 
 .light-theme {
@@ -12,6 +13,7 @@
     --background-main-color: white;
     --icon-color: black;
     --icon-btn-color: white;
+    --title-text-color: #001A6E;
 }
 
 body {
@@ -71,10 +73,9 @@ canvas {
 .hero-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #ffcc00;
+    color: var(--title-text-color);
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .geo-box {
