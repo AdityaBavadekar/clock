@@ -1,6 +1,11 @@
 # Clock
 Deployed at: https://clock-now.vercel.app/
 
+## Demo (Key presses are not displayed):
+> _For supported keyboard shortcuts read [below](#using-instructions)_
+
+https://github.com/user-attachments/assets/edb354ef-836c-4665-a65e-47535ac9d435
+
 ## Using Instructions
 ### Mobile Controls
 | Action          | Function                              |
@@ -18,7 +23,4 @@ Deployed at: https://clock-now.vercel.app/
 | **Shift + l**| Toggle the visibility of logs              |
 | **Shift + q**| Set a new title for the clock              |
 | **i**        | Display help message                       |
-
-## Demo (Key presses are not displayed):
-https://github.com/user-attachments/assets/edb354ef-836c-4665-a65e-47535ac9d435
 
